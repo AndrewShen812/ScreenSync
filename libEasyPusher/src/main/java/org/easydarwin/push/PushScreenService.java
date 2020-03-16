@@ -149,10 +149,10 @@ public class PushScreenService extends Service {
             @Override
             public void run() {
 
-                startForeground(111, new Notification.Builder(PushScreenService.this).setContentTitle(getString(R.string.screen_pushing))
-                        .setSmallIcon(R.drawable.ic_pusher_screen_pushing)
-                        .addAction(new Notification.Action(R.drawable.ic_close_pushing_screen, "关闭",
-                                PendingIntent.getBroadcast(getApplicationContext(), 10000, new Intent(ACTION_CLOSE_PUSHING_SCREEN), FLAG_CANCEL_CURRENT))).build());
+//                startForeground(111, new Notification.Builder(PushScreenService.this).setContentTitle(getString(R.string.screen_pushing))
+//                        .setSmallIcon(R.drawable.ic_pusher_screen_pushing)
+//                        .addAction(new Notification.Action(R.drawable.ic_close_pushing_screen, "关闭",
+//                                PendingIntent.getBroadcast(getApplicationContext(), 10000, new Intent(ACTION_CLOSE_PUSHING_SCREEN), FLAG_CANCEL_CURRENT))).build());
 
                 final String url = String.format("rtsp://%s:%s/%s.sdp", ip, port, id);
                 InitCallback _callback = new InitCallback() {
