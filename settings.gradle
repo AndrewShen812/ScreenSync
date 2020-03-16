@@ -1,0 +1,2 @@
+include ':app', ':libEasyPusher'//, ':libuvccamera-release'
+rootProject.name='ScreenSync'
